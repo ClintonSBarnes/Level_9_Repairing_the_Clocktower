@@ -7,11 +7,17 @@ Console.Write("What is the clock tower input number? ");
 input = Console.ReadLine();
 tickOrTock = Convert.ToInt32(input);
 
-if (tickOrTock % 2 == 0)
+if (tickOrTock == 0)
+{
+    Console.WriteLine("The number provided was zero. This is not even or odd");
+}
+else if (tickOrTock % 2 == 0)
 {
     Console.WriteLine("Tick");
 }
-Console.WriteLine("Tock");
-
+else
+{
+    Console.WriteLine("Tock");
+}
 
 Console.ReadKey();
